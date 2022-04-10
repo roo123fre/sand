@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.hero {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 15, 23, 0.7) 47.81%,
+    rgba(16, 15, 23, 0.265374) 103.69%,
+    rgba(16, 15, 23, 0) 137.81%
+  );
+}
+
+.hero__wraper {
+  z-index: 10;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 120px;
+  padding-top: 25px;
+  align-items: flex-end;
+}
+.hero__navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__navigate-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+  text-decoration: none;
+  list-style: none;
+}
+.hero__navigate-list:last-child {
+  margin-right: 0;
+}
+.hero__navigate-link {
+  position: relative;
+  font-size: 0;
+  padding: 15px;
+  margin-right: 15px;
+}
+.hero__navigate-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+.hero__navigate-link--instagram::before {
+  background-image: url(./images/icons/instagram.svg);
+}
+.hero__navigate-link--vk::before {
+  background-image: url(./images/icons/vk.svg);
+}
+.hero__navigate-link--youtube::before {
+  background-image: url(./images/icons/youtube.svg);
+  width: 32px;
+  height: 32px;
+}
+.hero__navigate-link--facebook::before {
+  background-image: url(./images/icons/facebook.svg);
+}
+.hero__link {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px 33px;
+  border-bottom: 1px solid transparent;
+}
+.hero__link:hover{
+  border-bottom: 1px solid #fff;
+}
+.hero__text{
+  font-family: "Gilroy";
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  
+}
+.hero__subtitle {
+  text-transform: lowercase;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  
+}
+.hero__title {
+  font-size: 64px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.profession_during_teaching { 
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #cb9c68;
+  margin-bottom: 51px;
+}
+.more {
+  background: #cb9c68;
+  border-radius: 8px;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  padding: 19px 72px;
+  width: 283px;
+  height: 67px;
+}
