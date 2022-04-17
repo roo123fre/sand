@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
 }
@@ -100,10 +100,10 @@
   margin: 0px 33px;
   border-bottom: 1px solid transparent;
 }
-.hero__link:hover{
+.hero__link:hover {
   border-bottom: 1px solid #fff;
 }
-.hero__text{
+.hero__text {
   font-family: "Gilroy";
   font-weight: 400;
   text-transform: uppercase;
@@ -111,7 +111,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  
 }
 .hero__subtitle {
   text-transform: lowercase;
@@ -121,14 +120,13 @@
   color: #ffffff;
   margin-bottom: 10px;
   margin-right: 15px;
-  
 }
 .hero__title {
   font-size: 64px;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.profession_during_teaching { 
+.profession_during_teaching {
   font-size: 24px;
   letter-spacing: 0.02em;
   color: #cb9c68;
@@ -143,4 +141,88 @@
   padding: 19px 72px;
   width: 283px;
   height: 67px;
+}
+
+.school {
+  background-color: black;
+  font-family: "Gilroy";
+}
+.school_inner {
+  padding-top: 110px;
+}
+.school_title {
+  position: relative;
+  border-radius: 14px;
+  margin-bottom: 45px;
+  font-size: 64px;
+  line-height: 76px;
+  z-index: 1;
+}
+.school_title::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  width: 999px;
+  height: 175px;
+  background: linear-gradient(
+    94.4deg,
+    rgba(44, 35, 31, 0.68) 4.85%,
+    rgba(203, 156, 104, 0.68) 95.02%
+  );
+  opacity: 0.68;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(28px);
+  border-radius: 14px 0px 0px 14px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  z-index: -1;
+}
+.school_title_text {
+  color: white;
+  text-transform: uppercase;
+}
+.school_title_text_this {
+  margin-left: 110px;
+  color: white;
+}
+.school_title_span {
+  color: #cb9c68;
+}
+.school__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.school__cards-item {
+  color: #fff;
+  background-color: #362b27;
+  border-radius: 16px;
+  padding: 88px 40px 20px 25px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+.school__cards-item::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 64px;
+  width: 64px;
+  background-repeat: no-repeat;
+}
+.school__cards--book::before {
+  background-image: url(./images/icons/book.svg);
+}
+.school__cards--man::before {
+  background-image: url(./images/icons/man.svg);
+}
+.school__cards--pencilhead::before {
+  background-image: url(./images/icons/pencilhead.svg);
+}
+.school__cards--worldstar::before {
+  background-image: url(./images/icons/worldsmile.svg);
 }
