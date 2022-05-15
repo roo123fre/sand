@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./do_not_open/normalize.css" />
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
@@ -87,27 +87,22 @@
         </div>
       </div>
     </section>
-    <section class="courses">
-      <div class="container">
-        <ul class="courses__cards">
-          <li class="courses__card">
-            <div class="courses__section">
-            <h1 class="courses__title">посмотрите, что будет на обучении</h1>
-            <h3 class="courses__text">Начните обучение прямо сегодня</h3>
-            <button class="courses__start">Начать</button>
-        </div>
-      </li>
-      <li>
-        <h4>ШКОЛА ПЕСОЧНОЙ АНИМАЦИИ
-          DIAZ-ART СТУДИЯ</h4>
-        <h1>ЧТО БУДЕТ НА 
-          ОБУЧЕНИИ</h1>
-        <h4>ВИДЕО С ЗАПИСЬЮ КУРСА ИЗНУТРИ</h4>
-        <img src="./images/icons/logotype.svg" alt="LOGOTYPE">
-      </li>
-        </ul>
-        
-      </div>
+    <section class="courses"> 
+      <div class="container"> 
+        <div class="courses__wrapper"> 
+          <div class="courses__start"> 
+            <h3 class="courses__text"> 
+              посмотрите, что будет на обучении 
+              <span class="courses__arrow-wraper"><span class="courses__arrow"></span></span> 
+            </h3> 
+            <p class="courses__sub-text">Начните обучение прямо сегодня</p> 
+            <a class="courses__link" href="#">Начать</a> 
+          </div> 
+          <div class="courses__end"> 
+            <img class="courses__img" src="./images/banner.jpg" alt="banner" > 
+          </div> 
+        </div> 
+      </div> 
     </section>
     <section class="benefits"></section>
     <section class="knowleges"></section>
