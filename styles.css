@@ -4,6 +4,7 @@
 }
 body {
   background-color: #000;
+  color: #fff;
 }
 .hero {
   height: 100vh;
@@ -252,10 +253,10 @@ body {
   margin-bottom: 15px;
   position: relative;
 }
-.courses__arrow-wraper{
+.courses__arrow-wraper {
   position: absolute;
-  bottom:12px;
-  right:50px;
+  bottom: 12px;
+  right: 50px;
 }
 .courses__sub-text {
   margin-bottom: 35px;
@@ -265,28 +266,28 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-.courses__arrow{
+.courses__arrow {
   display: inline-block;
   position: relative;
-  width:160px;
-  height:1px;
+  width: 160px;
+  height: 1px;
   background-color: #fff;
   border-top: 1px solid #fff;
 }
 .courses__arrow::after,
-.courses__arrow::before{
-  content: '';
+.courses__arrow::before {
+  content: "";
   width: 10px;
   height: 1px;
   background-color: #fff;
   position: absolute;
   right: 0;
 }
-.courses__arrow::before{
+.courses__arrow::before {
   transform: rotate(45deg);
-  top:-5px ;
+  top: -5px;
 }
-.courses__arrow::after{
+.courses__arrow::after {
   transform: rotate(-45deg);
   top: 3px;
 }
@@ -300,7 +301,73 @@ body {
   background: #cb9c68;
   border: 1px solid #cb9c68;
   border-radius: 8px;
-  max-width: 285px;  
-  width:100%;
+  max-width: 285px;
+  width: 100%;
   text-align: center;
+}
+
+.benefits {
+  padding: 110px 0;
+}
+
+.benefits__wraper {
+  background: linear-gradient(
+    94.4deg,
+    rgba(44, 35, 31, 0.68) 4.85%,
+    rgba(203, 156, 104, 0.68) 95.02%
+  );
+  margin-bottom: 45px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+.benefits__title {
+  padding-left: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.text{
+  color:#CB9C68;
+}
+
+.benefits__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits__item {
+  max-width: 360px;
+  width: 100%;
+  height: 145px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 15px 15px 25px;
+}
+
+.benefits__item-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.benefits__item-text {
+  max-width: 302px;
+  width: 100%;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
