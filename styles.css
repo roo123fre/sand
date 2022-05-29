@@ -170,11 +170,6 @@ body {
   left: -50px;
   width: 999px;
   height: 175px;
-  background: linear-gradient(
-    94.4deg,
-    rgba(44, 35, 31, 0.68) 4.85%,
-    rgba(203, 156, 104, 0.68) 95.02%
-  );
   opacity: 0.68;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(28px);
@@ -310,34 +305,33 @@ body {
   padding: 110px 0;
 }
 
-.benefits__wraper {
-  background: linear-gradient(
-    94.4deg,
-    rgba(44, 35, 31, 0.68) 4.85%,
-    rgba(203, 156, 104, 0.68) 95.02%
-  );
-  margin-bottom: 45px;
+.benefits__wrapper {
   border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  margin-bottom: 45px;
+  font-weight: 600;
+  font-size: 64px;
+  text-transform: uppercase;
+  padding: 15px 0 15px 50px;
 }
 .benefits__title {
   padding-left: 50px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 76px;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
-
-.text{
-  color:#CB9C68;
+.benefits__title-text {
+  color: #cb9c68;
+  padding-left: 400px;
+  letter-spacing: 0.02em;
+}
+.text {
+  color: #cb9c68;
 }
 
 .benefits__list {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  padding-left: 0;
 }
 
 .benefits__item {
@@ -347,8 +341,11 @@ body {
   border: 1px solid #ffffff;
   border-radius: 6px;
   padding: 15px 15px 25px;
+  margin-right: 40px;
 }
-
+.benefits__item:last-child{
+  margin-right: 0;
+}
 .benefits__item-title {
   font-family: "Gilroy";
   font-style: normal;
@@ -370,4 +367,64 @@ body {
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+
+.know__wrapper {
+  background: linear-gradient(
+    93.26deg,
+    rgba(44, 35, 31, 0.68) 3.49%,
+    rgba(203, 156, 104, 0.68) 50.41%,
+    rgba(54, 43, 36, 0.68) 97.32%
+  );
+  padding: 45px 0;
+  text-align: center;
+}
+
+.know__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.know__title-span {
+  color: #cb9c68;
+  margin-right: 15px;
+}
+
+.know__list {
+  list-style: none;
+  padding-top: 30px;
+  margin-bottom: 95px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 0;
+}
+
+.know__item {
+  position: relative;
+  max-width: 290px;
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 110px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+.know__item:nth-last-child(-n+4){
+  margin-bottom: 0;
+}
+.know__item-number {
+  position: absolute;
+  background: #cb9c68;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
 }
